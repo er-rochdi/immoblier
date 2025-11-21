@@ -1,4 +1,4 @@
-<div class="grid md:grid-cols-3 gap-8" id="property-grid">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="property-grid">
     @forelse($properties as $property)
         <div class="bg-white rounded-xl shadow-lg overflow-hidden property-card group fade-in-up">
             <div class="relative overflow-hidden h-64">

@@ -4,18 +4,19 @@
 
 @section('content')
     <!-- Hero Section -->
-    <div class="relative bg-gray-900 text-white py-20 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-gray-900 opacity-90"></div>
-        <div class="relative container mx-auto px-6 text-center z-10">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Contactez-nous</h1>
-            <p class="text-xl text-gray-300 max-w-2xl mx-auto">Une question ? Un projet ? Notre équipe est à votre écoute.
-            </p>
+    <div class="relative h-80 flex items-center justify-center bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative container mx-auto px-6 text-center z-10 text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 fade-in-up">Contactez-nous</h1>
+            <p class="text-xl text-gray-200 max-w-2xl mx-auto fade-in-up delay-100">Une question ? Un projet ? Notre équipe
+                est à votre écoute.</p>
         </div>
     </div>
 
     <section class="py-20">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <!-- Contact Info -->
                 <div>
                     <h2 class="text-3xl font-bold mb-8 text-gray-900">Nos Coordonnées</h2>
@@ -86,7 +87,7 @@
 
                     <form action="{{ route('contact.store') }}" method="POST" class="space-y-6">
                         @csrf
-                        <div class="grid grid-cols-2 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-1">Prénom</label>
                                 <input type="text" name="name" required

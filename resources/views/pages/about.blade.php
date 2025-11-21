@@ -4,19 +4,20 @@
 
 @section('content')
     <!-- Hero Section -->
-    <div class="relative bg-gray-900 text-white py-20 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-gray-900 opacity-90"></div>
-        <div class="relative container mx-auto px-6 text-center z-10">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Notre Histoire</h1>
-            <p class="text-xl text-gray-300 max-w-2xl mx-auto">Depuis plus de 10 ans, ImmoLuxe redéfinit l'immobilier de
-                prestige en France.</p>
+    <div class="relative h-80 flex items-center justify-center bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1577412647305-991150c7d163?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative container mx-auto px-6 text-center z-10 text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 fade-in-up">Notre Histoire</h1>
+            <p class="text-xl text-gray-200 max-w-2xl mx-auto fade-in-up delay-100">Depuis plus de 10 ans, ImmoLuxe redéfinit
+                l'immobilier de prestige en France.</p>
         </div>
     </div>
 
     <!-- Content -->
     <section class="py-20">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
                     <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                         alt="Notre Agence" class="rounded-xl shadow-2xl">
@@ -52,7 +53,7 @@
     <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Notre Équipe</h2>
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Team Member 1 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center group">
                     <div class="h-64 overflow-hidden">

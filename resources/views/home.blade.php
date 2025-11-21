@@ -13,7 +13,7 @@
                 class="inline-block py-1 px-3 rounded-full bg-blue-600/20 border border-blue-400/30 text-blue-300 text-sm font-semibold mb-6 fade-in-up backdrop-blur-sm">
                 L'immobilier de prestige
             </span>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in-up leading-tight tracking-tight">
+            <h1 class="text-4xl md:text-7xl font-bold mb-6 fade-in-up leading-tight tracking-tight">
                 Trouvez votre bien <br>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">d'exception</span>
             </h1>
@@ -83,7 +83,7 @@
     <section class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12">Biens à la Une</h2>
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 @foreach ($featuredProperties as $property)
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden property-card group">
                         <div class="relative overflow-hidden h-64">
